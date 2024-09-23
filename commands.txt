@@ -1,0 +1,29 @@
+git clone https://github.com/EnocD/qtm350-quiz01
+cd qtm350-quiz01
+touch commands.txt
+git branch feature-update
+git checkout feature-update
+mkdir reports
+cd reports
+touch summary.md
+echo "This document provides a summary of the project updates." > summary.md
+cd ..
+git add reports
+git commit -m "Add reports directory"
+cd reports
+touch file{1..3}.txt
+cd ..
+ls
+cd data
+mv raw-data.csv input-data.csv
+cd .. 
+ls
+cd scripts
+mkdir backup
+cd *.py backup
+ls
+cd backup
+ls
+cd ../..
+cd docs
+rm documentation.md
